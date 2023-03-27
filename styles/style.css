@@ -1,6 +1,24 @@
 @font-face {
+    font-family: 'Popins-regular';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: 'Popins';
     src: url(../fonts/Poppins/Poppins-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-regular';
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
     font-style: normal;
     font-weight: normal;
 }
@@ -21,11 +39,15 @@ a {
     color: white
 }
 
-ul {
+header ul {
     width: 700px;
 }
 
 ul li{
+    list-style-type: none;
+}
+
+header ul li{
     display: inline-block;
     color: white;
     font-family: 'Popins';
@@ -41,7 +63,9 @@ nav {
     display: inline-block;
 }
 
-
+main { 
+    padding-top: 96px;
+}
 
 .navigation:hover{
     border-bottom: 2px solid #FFC492;
@@ -72,6 +96,12 @@ nav {
     display: inline-block;
 }
 
+#coffee-image{
+    width: 505px;
+    height: 566px;
+    float: right;
+}
+
 .authorization {
     display: inline-block;
     margin-left: 160px;
@@ -81,4 +111,144 @@ nav {
     margin: 0px;
     padding-left: 160px;
     padding-right: 160px;
+    width: 75%;
+}
+
+.about { 
+    display: inline-block;
+    width: 50%;
+    margin-right: 32px;
+}
+
+.about h1 {
+    width: 300px;
+    color: white;
+    text-align: left;
+    line-height: 68px;
+    font-family: 'PlayfairDisplay';
+    width: 350px;
+    height: 126px;
+}
+
+.about p {
+    color: #B8B8B8;
+    margin-top: 16px;
+    font-family: 'Popins-regular';
+    size: 16px;
+    line-height: 28px;
+}
+
+.button{
+    display: flex;
+    width: 164px;
+    height: 48px;
+    background-color: #FFB577;
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2D33;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    background-color: #ffc391;
+    transition: 0.6s;
+}
+
+.button::after {
+    padding-top: 2px;
+    padding-left: 8px;
+    content: '\f30b';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: #2E2D33;
+}
+.about ul{
+    display: inline;
+    padding-top: 40px;
+}
+
+.about li {
+    padding-top: 16px;
+}
+
+.about h4{
+    display: inline;
+    color: white;
+    font-family: 'PlayfairDisplay';
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+}
+
+#abt{ 
+    margin: 0;
+}
+
+.know-more{
+    padding-top: 160px;
+}
+
+.know-more h1 {
+    font-family: "PlayfairDisplay-regular";
+    color: #FFB577;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.know-more h1::after { 
+    padding-left: 8px;
+    content: '\2015';
+}
+
+.know-more h2 {
+    font-family: 'PlayfairDisplay';
+    font-size: 40px;
+    line-height: 58px;
+    color: white;
+    width: 513px;
+    margin-bottom: 32px;
+}
+
+.know-more p { 
+    color: #B8B8B8;
+    margin-top: 16px;
+    font-family: 'Popins-regular';
+    size: 16px;
+    line-height: 28px;
+    width: 513px;
+}
+
+.know-more img{
+    display: inline;
+    float: right;
+    height: 450px;
+    width: 190px;
+}
+
+#img-down {
+    margin-top: 80px;
+    margin-right: 67px;
+}
+
+.know-menu {
+    display: inline-block;
+    width: 190px;
+    height: 245px;
+    margin-bottom: 32px;
+}
+
+.know-menu h3{
+    font-family: 'Poppins';
+    font-size: 24px;
+    line-height: 36px;
+    color: #C4E4EA;
+    margin: 0;
+    margin-top: 44px;
+}
+
+.know-menu p {
+    margin: 0;
+    width: 180px;
 }
