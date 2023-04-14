@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'coffee/css/style.css'%}">
     <title>Coffee-Site</title>
 </head>
 <body>
@@ -55,13 +56,13 @@
                     </li>
                 </ul>
             </div>
-            <img src="img/Header Image.png" alt="Coffee image" id="coffee-image">
+            <img src="{%static 'coffee/img/Header_Image.png'%}" alt="Coffee image" id="coffee-image">
         </div> 
 
         <div class="know-more">
             <div class="main-block">
-                <img src="img/Know more Image 2.png" alt="More info"> 
-                <img src="img/Know more Image 1.png" alt="More info" id="img-down">
+                <img src="{%static 'coffee/img/Know more Image 2.png'%}" alt="More info"> 
+                <img src="{%static 'coffee/img/Know more Image 1.png'%}" alt="More info" id="img-down">
                 <h1>KNOW MORE ABOUT US</h1>
                 <h2>We source sustainable & line caught Foods</h2>
                 <p>
@@ -114,7 +115,7 @@
                 </div>
                 <div class="main-block-serving">
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Quafe Cake</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his mother
@@ -122,7 +123,7 @@
                         </p>
                     </div>
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector-6.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector-6.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Coffee</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his mother
@@ -130,7 +131,7 @@
                         </p>
                     </div>
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector-2.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector-2.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Fast Food</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his
@@ -138,7 +139,7 @@
                         </p>
                     </div>
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector-5.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector-5.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Cocktails</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his mother
@@ -146,7 +147,7 @@
                         </p>
                     </div>
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector-4.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector-4.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Grill</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his mother
@@ -154,7 +155,7 @@
                         </p>
                     </div>
                     <div class="serving">
-                        <div class="img-serv"><img src="img/Vector-3.png" alt="Cake"></div>
+                        <div class="img-serv"><img src="{%static 'coffee/img/Vector-3.png'%}" alt="Cake"></div>
                         <h4 class="h2-serv">Snacks</h4>
                         <p id="p-serv">
                             Through True Rich Attended no end it his mother
@@ -176,6 +177,44 @@
                     </p>
                 </div>
                 <h5>Most Popular Picks</h5>
+                <div class="menu-prices">
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image.png'%}" alt="coffee" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image-2.png'%}" alt="cake" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image-3.png'%}" alt="burger" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image-4.png'%}" alt="french fries" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image-5.png'%}" alt="sandwich" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <img src="{%static 'coffee/img/Image-6.png'%}" alt="chiken soup" class="food-pic">
+                        <div class="name-prices">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

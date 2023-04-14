@@ -339,3 +339,29 @@ h5 {
     display: inline;
     margin: 0;
 }
+
+.menu-prices {
+    margin-top: 83px;
+    width: 100%;
+    display: inline-block;
+}
+
+.menu { 
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 32px;
+}
+
+.food-pic {
+    display: inline-block;
+    width: 327px;
+    height: 191px;
+}
+
+.name-prices { 
+    background-color: #1F1D21;
+    height: 70px;
+    width: 100%;
+}
+
+
