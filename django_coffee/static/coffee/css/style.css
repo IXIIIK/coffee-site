@@ -336,8 +336,7 @@ h5 {
     font-family: 'PlayfairDisplay';
     color: #C4E4EA;
     font-size: 14px;
-    display: inline;
-    margin: 0;
+    display: block;
 }
 
 .menu-prices {
@@ -364,4 +363,89 @@ h5 {
     width: 100%;
 }
 
+#menu-title { 
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 18px;
+    margin-left: 23px;
+}
 
+.name-prices > #menu-prices {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 240px;
+}
+
+.our-menu .button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video { 
+    margin-top: 160px;
+    height: 668px;
+    width: 100%;
+    background-color: #1F1D21;
+    margin-right: 0;
+}
+
+.main-video { 
+    margin-left: 78px;
+    margin-right: 78px;
+    width: 500px;
+}
+
+.main-video p {
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+    margin-top: 158px;
+    font-family: 'PlayfairDisplay-regular';
+}
+
+.expert-info {
+    height: 70px;
+    margin-top: 72px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.main-video h3 {
+    position: absolute;
+    color: white;
+    display: inline;
+    
+}
+
+.expert-info p {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline;
+    position: absolute;
+    color: #4a4a4a;
+    margin-top: 43px;
+}
+
+.avatar-expert {
+    width: 49px;
+    height: 100%;
+    border-bottom: 1px solid white;
+    z-index: 1;
+    float: right;
+}
+
+.video-latte{
+    float: right;
+    margin: 0;
+    padding: 0;
+
+}
+
+.video-block { 
+    display: inline-block;
+    width: 100%;
+}

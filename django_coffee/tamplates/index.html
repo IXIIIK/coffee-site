@@ -7,26 +7,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
     integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="{%static 'coffee/css/style.css'%}">
-    <title>Coffee-Site</title>
+    <link href="{% static 'coffee/css/style.css' %}?version={% now "U" %}" rel="stylesheet"/>
+    <link rel="icon" href="{%static 'coffee/img/icon.ico'%}" type="image/x-icon">
+    
+    <title>{{ title }}</title>
 </head>
 <body>
     <header>
         <div class="main-block">
             <nav>
                 <ul>
-                    <li><a href="#" class="navigation">Home</a></li>
-                    <li><a href="#" class="navigation">Menu</a></li>
-                    <li><a href="#" class="navigation">About Us</a></li>
-                    <li><a href="#" class="navigation">Our Story</a></li>
-                    <li><a href="#" class="navigation">Blog</a></li>
-                    <li><a href="#" class="navigation">Contact</a></li>
+                    {% for m in menu %}
+                    <li><a href="#" class="navigation">{{m}}</a></li>
+                    {% endfor %}
                 </ul>
             </nav>
             <div class="authorization">
-                <a href="#">Log in</a>
+            {% if user.is_authenticated %}
+                <a>{{ user.username|default:'' }}</a>
                 <span id="stick"></span>
-                <a href="#">Registration</a>
+                <a href="{% url 'logout' %}">logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Log in</a>
+                <span id="stick"></span>
+                <a href="{% url 'signup' %}">Registration</a>
+            {% endif %}
             </div>
         </div>
     </header>
@@ -181,40 +186,69 @@
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image.png'%}" alt="coffee" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">Drip coffee</h5>
+                            <p id="menu-prices">$8.85</p>
                         </div>
                     </div>
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image-2.png'%}" alt="cake" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">Choco Cup Cake</h5>
+                            <p id="menu-prices">$4.85</p>
                         </div>
                     </div>
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image-3.png'%}" alt="burger" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">Chiken Burger</h5>
+                            <p id="menu-prices">$8.85</p>
                         </div>
                     </div>
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image-4.png'%}" alt="french fries" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">French Fries</h5>
+                            <p id="menu-prices">$7.85</p>
                         </div>
                     </div>
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image-5.png'%}" alt="sandwich" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">Sandwich</h5>
+                            <p id="menu-prices">$3.97</p>
                         </div>
                     </div>
                     <div class="menu">
                         <img src="{%static 'coffee/img/Image-6.png'%}" alt="chiken soup" class="food-pic">
                         <div class="name-prices">
-
+                            <h5 id="menu-title">Chinese Soup</h5>
+                            <p id="menu-prices">$8.85</p>
                         </div>
                     </div>
                 </div>
+                <a href="#" class="button">View Menu</a>
+            </div>
+        </div>
+        <div class="video-block">
+            <div class="video">
+                <div class="main-video">
+                    <p>
+                        Edit this text to make it your own. To edit, simply 
+                        click directly on the text to start adding your own
+                        words. You can move the text by dragging and dropping
+                        the text
+                    </p>
+                    <div class='expert-info'>
+                        <h3>Joheny Andro</h3>
+                        <p>Bhubaneswar, Odisha</p>
+                        <div class="avatar-expert">
+                            <img src="{%static 'coffee/img/avatar.png'%}" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+                <video controls class="video-latte">
+                    <source src="{%static 'coffee/video/latte_art.mp4'%}" type="video/mp4">
+                </video>
             </div>
         </div>
     </main>
